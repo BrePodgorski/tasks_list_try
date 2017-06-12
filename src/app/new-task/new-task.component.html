@@ -1,0 +1,8 @@
+<!-- <p>
+  new-task works!
+</p> -->
+<h3>Add a new task!</h3>
+<form (submit) = 'addTask(formData)' #formData='ngForm'>
+  <input type="text" name="new_task" [(ngModel)]='task.task' #task='ngModel'>
+  <input type="submit" name="Submit">
+</form>
